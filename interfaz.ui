@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>594</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Franco AI Bot</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+    QMainWindow {
+        background-color: #121212;
+    }
+    QTextEdit {
+        background-color: #1e1e1e;
+        color: #e0e0e0;
+        border: 1px solid #333333;
+        border-radius: 10px;
+        padding: 10px;
+        font-family: 'Segoe UI', sans-serif;
+        font-size: 11pt;
+    }
+    QLineEdit {
+        background-color: #2d2d2d;
+        color: white;
+        border: 2px solid #3d3d3d;
+        border-radius: 15px;
+        padding: 8px 15px;
+        font-size: 10pt;
+        margin-top: 5px;
+    }
+    QLineEdit:focus {
+        border: 2px solid #007acc;
+    }
+    QPushButton {
+        background-color: #007acc;
+        color: white;
+        border-radius: 15px;
+        padding: 10px;
+        font-weight: bold;
+        font-size: 10pt;
+        margin-top: 5px;
+    }
+    QPushButton:hover {
+        background-color: #0098ff;
+    }
+    QPushButton:pressed {
+        background-color: #005a9e;
+    }
+   </string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>10</number>
+    </property>
+    <property name="leftMargin">
+     <number>20</number>
+    </property>
+    <property name="topMargin">
+     <number>20</number>
+    </property>
+    <property name="rightMargin">
+     <number>20</number>
+    </property>
+    <property name="bottomMargin">
+     <number>20</number>
+    </property>
+    <item>
+     <widget class="QTextEdit" name="txt_chat">
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+      <property name="placeholderText">
+       <string>Acá aparecerá nuestra charla...</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="input_mensaje">
+      <property name="placeholderText">
+       <string>Escribí un mensaje aquí...</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btn_enviar">
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="text">
+       <string>Enviar Mensaje</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>594</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
