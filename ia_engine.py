@@ -1,6 +1,13 @@
+import os
 import google.generativeai as genai
+from dotenv import load_dotenv
 
-API_KEY = "AIzaSyDuDNL0UTTXfwn2tlSCVUlm3lE0bfMdN6Q"
+# Carga las variables del archivo .env
+load_dotenv()
+
+# Lee la clave de forma segura
+API_KEY = os.getenv("GEMINI_API_KEY")
+
 genai.configure(api_key=API_KEY)
 
 def preguntar_a_gemini(mensaje):
