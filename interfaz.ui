@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>594</width>
-    <height>700</height>
+    <width>790</width>
+    <height>846</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -37,10 +37,10 @@
         margin-top: 5px;
     }
     QLineEdit:focus {
-        border: 2px solid #007acc;
+        border: 2px solid #00cc0a;
     }
     QPushButton {
-        background-color: #007acc;
+        background-color: #07cc00;
         color: white;
         border-radius: 15px;
         padding: 10px;
@@ -49,10 +49,10 @@
         margin-top: 5px;
     }
     QPushButton:hover {
-        background-color: #0098ff;
+        background-color: #1c9653;
     }
     QPushButton:pressed {
-        background-color: #005a9e;
+        background-color: #009e22;
     }
    </string>
   </property>
@@ -84,6 +84,16 @@
      </widget>
     </item>
     <item>
+     <widget class="QFrame" name="frame">
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+     </widget>
+    </item>
+    <item>
      <widget class="QLineEdit" name="input_mensaje">
       <property name="placeholderText">
        <string>Escribí un mensaje aquí...</string>
@@ -100,6 +110,24 @@
       </property>
      </widget>
     </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QPushButton" name="btn_guardar">
+        <property name="text">
+         <string>Guardar memoria</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btn_limpiar">
+        <property name="text">
+         <string>Limpiar chat</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
    </layout>
   </widget>
   <widget class="QMenuBar" name="menubar">
@@ -107,7 +135,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>594</width>
+     <width>790</width>
      <height>22</height>
     </rect>
    </property>
